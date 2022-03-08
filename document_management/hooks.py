@@ -102,7 +102,13 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+scheduler_events = {
 
+ 	"daily": [
+ 		"document_management.insurance.doctype.insurance.update_insurance.update_insurance_status"
+ 	],
+
+    }
 # Scheduled Tasks
 # ---------------
 
@@ -126,7 +132,22 @@ app_license = "MIT"
 
 # Testing
 # -------
-
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                (
+                    "Insurance-column_break_6",                    
+                    "Insurance-section_break_12",
+                ),
+            ]
+        ],
+    },
+    
+]
 # before_tests = "document_management.install.before_tests"
 
 # Overriding Methods
