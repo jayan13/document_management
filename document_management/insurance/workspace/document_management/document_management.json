@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Document Management",
  "links": [],
- "modified": "2022-02-28 20:23:08.031734",
+ "modified": "2022-09-21 16:27:58.182277",
  "modified_by": "Administrator",
  "module": "Insurance",
  "name": "Document Management",
@@ -33,6 +33,12 @@
    "doc_view": "",
    "label": "Insurance Type",
    "link_to": "Insurance Type",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Legal Case",
+   "link_to": "Legal Case",
    "type": "DocType"
   }
  ]
