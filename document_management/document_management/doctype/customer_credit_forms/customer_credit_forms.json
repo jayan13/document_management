@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CUST-CR-FRM-.######",
+ "creation": "2022-10-23 17:20:12.966078",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "credit_limit",
+  "column_break_2",
+  "customer",
+  "credit_term",
+  "section_break_5",
+  "trade_license_no",
+  "column_break_7",
+  "trade_license_expiry_date",
+  "partners_details_section",
+  "partners",
+  "section_break_11",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.payment_terms",
+   "fieldname": "credit_term",
+   "fieldtype": "Data",
+   "label": "Credit Term",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trade_license_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trade License No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trade_license_expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trade License Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partners_details_section",
+   "fieldtype": "Section Break",
+   "label": "Partners Details"
+  },
+  {
+   "fieldname": "partners",
+   "fieldtype": "Table",
+   "label": "Partners",
+   "options": "Customer Credit Forms Partners"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Data",
+   "label": "Credit Limit",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-23 17:36:29.829269",
+ "modified_by": "Administrator",
+ "module": "Document Management",
+ "name": "Customer Credit Forms",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
