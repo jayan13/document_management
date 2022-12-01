@@ -15,7 +15,7 @@
  "is_standard": 1,
  "label": "Document Management",
  "links": [],
- "modified": "2022-09-21 16:27:58.182277",
+ "modified": "2022-10-10 12:39:53.292985",
  "modified_by": "Administrator",
  "module": "Insurance",
  "name": "Document Management",
@@ -39,6 +39,12 @@
    "doc_view": "",
    "label": "Legal Case",
    "link_to": "Legal Case",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Bank Guarantee And LC",
+   "link_to": "Bank Guarantee And LC",
    "type": "DocType"
   }
  ]

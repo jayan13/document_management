@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-10 08:57:32.694345",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reff_no",
+  "customer_name",
+  "issue_date",
+  "status",
+  "expiry_date_type",
+  "expiry_date",
+  "type",
+  "applicant_name",
+  "beneficiary_name",
+  "gtee_ccy",
+  "gtee_amt_in_fcy",
+  "column_break_11",
+  "gtee_amt_in_lcy",
+  "os_amt_in_fcy",
+  "os_amt_in_lcy",
+  "cash_margin_pct",
+  "cash_margin_ccy",
+  "os_cash_margin_in_fcy",
+  "os_cash_margin_in_lcy",
+  "commission_rate",
+  "issuing_bank",
+  "project_title",
+  "section_break_23",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "reff_no",
+   "fieldtype": "Data",
+   "label": "Reff No"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "depends_on": "eval:doc.expiry_date_type!='Open Ended'",
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Guarantee Types",
+   "options": "Advance Payment Guarantee\nPerformance Guarantee\nBid Bond / Tender Guarantee\nLabor Guarantee\nMaintenance Guarantee\nRetention Money\nCustom / Special Guarantee"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "fieldname": "gtee_ccy",
+   "fieldtype": "Link",
+   "label": "GTEE CCY",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "gtee_amt_in_fcy",
+   "fieldtype": "Currency",
+   "label": "GTEE AMT IN FCY"
+  },
+  {
+   "fieldname": "gtee_amt_in_lcy",
+   "fieldtype": "Currency",
+   "label": "GTEE AMT IN LCY"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "os_amt_in_fcy",
+   "fieldtype": "Data",
+   "label": "OS AMT IN FCY"
+  },
+  {
+   "fieldname": "os_amt_in_lcy",
+   "fieldtype": "Data",
+   "label": "OS AMT IN LCY"
+  },
+  {
+   "fieldname": "cash_margin_pct",
+   "fieldtype": "Data",
+   "label": "Cash Margin PCT"
+  },
+  {
+   "fieldname": "cash_margin_ccy",
+   "fieldtype": "Link",
+   "label": "Cash Margin CCY",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "os_cash_margin_in_fcy",
+   "fieldtype": "Currency",
+   "label": "OS Cash Margin In FCY"
+  },
+  {
+   "fieldname": "os_cash_margin_in_lcy",
+   "fieldtype": "Currency",
+   "label": "OS Cash Margin In LCY"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Data",
+   "label": "Commission Rate"
+  },
+  {
+   "fieldname": "issuing_bank",
+   "fieldtype": "Data",
+   "label": "Issuing Bank"
+  },
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Link",
+   "label": "Project Title",
+   "options": "Project"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nCancelled"
+  },
+  {
+   "fieldname": "expiry_date_type",
+   "fieldtype": "Select",
+   "label": "Expiry Date Type",
+   "options": "Fixed\nAuto Renew\nOpen Ended"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-17 17:32:12.477300",
+ "modified_by": "Administrator",
+ "module": "Document Management",
+ "name": "Bank Guarantee And LC",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

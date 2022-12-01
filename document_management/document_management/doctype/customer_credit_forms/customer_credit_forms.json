@@ -19,7 +19,9 @@
   "partners_details_section",
   "partners",
   "section_break_11",
-  "remarks"
+  "remarks",
+  "printing_settings_section",
+  "letter_head"
  ],
  "fields": [
   {
@@ -86,7 +88,7 @@
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Remarks"
   },
   {
@@ -94,11 +96,22 @@
    "fieldtype": "Data",
    "label": "Credit Limit",
    "read_only": 1
+  },
+  {
+   "fieldname": "printing_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Printing Settings"
+  },
+  {
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letter Head",
+   "options": "Letter Head"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-23 17:36:29.829269",
+ "modified": "2022-11-02 13:51:20.910045",
  "modified_by": "Administrator",
  "module": "Document Management",
  "name": "Customer Credit Forms",
