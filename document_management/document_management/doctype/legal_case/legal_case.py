@@ -22,3 +22,7 @@ def get_outstanding(company,customer):
 		return ot[0].outst
 	else:
 		return '0'
+
+@frappe.whitelist()
+def get_payments(customer,case_initiated_date):
+	return frappe.db.get_all('GL Entry',filters={'party':customer,'posting_date':['>',case_initiated_date],'credit':['>',0]},fields=['voucher_type','voucher_no','account','credit','posting_date'])
